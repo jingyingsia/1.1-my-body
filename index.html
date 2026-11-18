@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prevent search engines from indexing this private buyer companion link -->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Chapter 1: My Body (&#x8EAB;&#x4F53;) &bull; Parent Audio Poster</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Child-Friendly Fonts + Authentic Kai-Style Chinese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Noto+Sans+SC:wght@500;700;900&family=Noto+Sans+TC:wght@500;700;900&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
+
+    <style>
+        :root {
+            --bg-cream: #FDFBF7;
+            --sage: #73A580;
+            --sage-deep: #52826B;
+            --sage-light: #EBF4EE;
+            --coral: #E07A5F;
+            --coral-deep: #C86449;
+            --coral-light: #FDF0EC;
+            --mustard: #F2CC8F;
+            --mustard-light: #FEF8EC;
+            --navy: #3D405B;
+            --slate: #6D718C;
+            --border-soft: #E6DFD3;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #EFEAE1;
+            color: var(--navy);
+            font-family: 'Nunito', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .font-display {
+            font-family: 'Fredoka', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+        }
+
+        .kai-font {
+            font-family: 'LXGW WenKai', 'KaiTi', 'STKaiti', 'BiauKai', 'Noto Sans SC', 'Noto Sans TC', serif;
+        }
+
+        /* Poster Frame Styling */
+        .poster-sheet {
+            background-color: var(--bg-cream);
+            background-image:
+                radial-gradient(circle at 0% 0%, rgba(115, 165, 128, 0.14) 0%, transparent 38%),
+                radial-gradient(circle at 100% 12%, rgba(224, 122, 95, 0.12) 0%, transparent 35%),
+                radial-gradient(circle at 50% 100%, rgba(242, 204, 143, 0.16) 0%, transparent 45%);
+        }
+
+        /* Active Playing Card State */
+        .vocab-card {
+            transition: transform 0.15s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .vocab-card:active {
+            transform: scale(0.985);
+        }
+        .vocab-card.is-playing {
+            border-color: var(--coral) !important;
+            background-color: var(--coral-light) !important;
+            box-shadow: 0 8px 20px rgba(224, 122, 95, 0.16);
+        }
+
+        /* Equalizer Soundwave Animation */
+        @keyframes eqBar {
+            0%, 100% { height: 6px; }
+            50% { height: 18px; }
+        }
+        .eq-bar {
+            width: 3px;
+            height: 6px;
+            border-radius: 9999px;
+            background-color: currentColor;
+        }
+        .is-playing .eq-bar:nth-child(1) { animation: eqBar 0.55s infinite ease-in-out 0.0s; }
+        .is-playing .eq-bar:nth-child(2) { animation: eqBar 0.55s infinite ease-in-out 0.18s; }
+        .is-playing .eq-bar:nth-child(3) { animation: eqBar 0.55s infinite ease-in-out 0.35s; }
+    </style>
+</head>
+<body class="min-h-screen py-0 sm:py-6 px-0 sm:px-4 flex justify-center">
+
+    <!-- Main Mobile Poster Container -->
+    <div class="poster-sheet w-full max-w-[480px] min-h-screen sm:min-h-0 sm:rounded-[36px] sm:border-4 sm:border-white sm:shadow-2xl overflow-hidden flex flex-col justify-between relative">
+
+        <!-- Decorative Inner Frame (Desktop/Tablet) -->
+        <div class="hidden sm:block absolute inset-3 border-2 border-[#73A580]/25 rounded-[26px] pointer-events-none"></div>
+
+        <!-- TOP STICKY POSTER HEADER -->
+        <header class="sticky top-0 z-30 bg-[#FDFBF7]/95 backdrop-blur-md border-b border-[#E6DFD3] px-4 pt-4 pb-3">
+            <!-- Top Pill & Chapter Tag -->
+            <div class="flex items-center justify-between gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EBF4EE] border border-[#73A580]/40 text-[#52826B] text-[11px] font-extrabold tracking-wide uppercase">
+                    &#x1F33F; Screen-Free for Kids
+                </span>
+                <span class="text-[11px] font-extrabold text-[#6D718C] bg-white px-2.5 py-0.5 rounded-full border border-[#E6DFD3]">
+                    Chapter 1 &bull; Audio Poster
+                </span>
+            </div>
+
+            <!-- Poster Main Title -->
+            <div class="mt-2 text-center">
+                <h1 class="font-display text-[26px] sm:text-[28px] font-bold text-[#3D405B] leading-tight">
+                    My Body <span id="poster-title-zh" class="kai-font text-[#E07A5F]">(&#x8EAB;&#x4F53;)</span>
+                </h1>
+                <p class="text-xs font-bold text-[#6D718C] mt-0.5">
+                    Tap any body part below to hear Mandarin pronunciation
+                </p>
+            </div>
+
+            <!-- Interactive Controls Bar -->
+            <div class="flex items-center justify-between gap-1.5 mt-3">
+                <!-- Simplified / Traditional Switch -->
+                <div class="flex bg-[#EFEAE1] p-1 rounded-xl flex-1">
+                    <button type="button" id="btn-simp" onclick="setScript('simp')"
+                        class="flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold bg-white text-[#E07A5F] shadow-2xs transition cursor-pointer">
+                        &#x7B80;&#x4F53;&#x4E2D;&#x6587;
+                    </button>
+                    <button type="button" id="btn-trad" onclick="setScript('trad')"
+                        class="flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold text-[#6D718C] transition cursor-pointer">
+                        &#x7E41;&#x9AD4;&#x4E2D;&#x6587;
+                    </button>
+                </div>
+
+                <!-- Normal / Slow Speed Switch -->
+                <div class="flex bg-[#EFEAE1] p-1 rounded-xl flex-1">
+                    <button type="button" id="btn-normal" onclick="setSpeed(0.92)"
+                        class="flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold bg-white text-[#52826B] shadow-2xs transition cursor-pointer">
+                        &#x1F407; Normal
+                    </button>
+                    <button type="button" id="btn-slow" onclick="setSpeed(0.58)"
+                        class="flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold text-[#6D718C] transition cursor-pointer">
+                        &#x1F422; Slow
+                    </button>
+                </div>
+
+                <!-- Play All 9 Words Button -->
+                <button type="button" id="btn-play-all" onclick="togglePlayAll()"
+                    class="py-2 px-3 rounded-xl text-[11px] font-black bg-[#E07A5F] hover:bg-[#C86449] text-white shadow-xs transition cursor-pointer shrink-0">
+                    &#x25B6;&#xFE0F; Play All
+                </button>
+            </div>
+        </header>
+
+        <!-- MAIN POSTER BODY -->
+        <main class="px-4 pt-3.5 pb-6 space-y-3 relative z-10">
+
+            <!-- In-App Browser Tip (Shown automatically in WeChat / Instagram / TikTok) -->
+            <div id="inapp-tip" class="hidden bg-[#FEF8EC] border-2 border-[#F2CC8F] rounded-2xl p-3 text-xs font-bold text-[#6E4E1B] leading-snug">
+                &#x1F4A1; <strong>No sound?</strong> Tap <strong>"&bull;&bull;&bull;"</strong> at the top-right and choose <strong>"Open in Safari / Chrome"</strong> so audio plays clearly!
+            </div>
+
+            <!-- 9 Illustrated Audio Cards List -->
+            <div id="poster-cards-container" class="space-y-2.5"></div>
+
+            <!-- Compact 3-Step Parent Play Tip -->
+            <section class="mt-4 bg-white/90 border-2 border-dashed border-[#73A580]/55 rounded-2xl p-3.5 space-y-1.5">
+                <div class="text-xs font-black uppercase tracking-wider text-[#52826B] flex items-center gap-1.5">
+                    <span>&#x1F3B2;</span>
+                    <span>Quick Screen-Free Play Ideas</span>
+                </div>
+                <p class="text-xs font-bold text-[#3D405B] leading-relaxed">
+                    <strong>1. Point &amp; Tap:</strong> Tap a word on your phone, then touch that body part together.<br>
+                    <strong>2. Mirror Game:</strong> Stand at a mirror and name <em>eyes, nose, mouth &amp; teeth</em>.<br>
+                    <strong>3. Tracing Tip:</strong> On Pages 7&ndash;20, trace the <strong>black stroke</strong> first!
+                </p>
+            </section>
+
+        </main>
+
+        <!-- POSTER FOOTER -->
+        <footer class="px-4 py-4 border-t border-[#E6DFD3] bg-white/70 text-center space-y-1 relative z-10">
+            <div class="text-xs font-extrabold text-[#3D405B]">
+                Montessori Mandarin Toddler Series &bull; Chapter 1: My Body
+            </div>
+            <div class="text-[10.5px] font-bold text-[#6D718C]">
+                &copy; Personal Use Only for Etsy Buyers &bull; Screen-Free Learning
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // 9 Core Body Parts with ASCII-Safe Unicode Escapes & Scandinavian Pastel SVG Illustrations
+        const BODY_ITEMS = [
+            {
+                num: '01',
+                id: 'head',
+                simp: '\u5934',
+                trad: '\u982D',
+                pinyin: 't\u00F3u',
+                en: 'Head',
+                tint: '#FCF2EF',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#FCF2EF" />
+                        <circle cx="24" cy="64" r="9" fill="#F6D5BE" stroke="#3D405B" stroke-width="2.6" />
+                        <circle cx="96" cy="64" r="9" fill="#F6D5BE" stroke="#3D405B" stroke-width="2.6" />
+                        <circle cx="60" cy="64" r="36" fill="#F6D5BE" stroke="#3D405B" stroke-width="3" />
+                        <path d="M 24 58 C 24 32, 42 22, 60 22 C 78 22, 96 32, 96 58 C 88 44, 74 40, 60 42 C 46 40, 32 44, 24 58 Z" fill="#6D5959" stroke="#3D405B" stroke-width="3" stroke-linejoin="round" />
+                        <path d="M 48 16 L 60 8 L 72 16" stroke="#E07A5F" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="47" cy="62" r="3.8" fill="#3D405B" />
+                        <circle cx="73" cy="62" r="3.8" fill="#3D405B" />
+                        <ellipse cx="40" cy="72" rx="5.5" ry="3.2" fill="#E07A5F" opacity="0.55" />
+                        <ellipse cx="80" cy="72" rx="5.5" ry="3.2" fill="#E07A5F" opacity="0.55" />
+                        <path d="M 52 77 Q 60 85 68 77" stroke="#3D405B" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                    </svg>
+                `
+            },
+            {
+                num: '02',
+                id: 'hand',
+                simp: '\u624B',
+                trad: '\u624B',
+                pinyin: 'sh\u01D2u',
+                en: 'Hand',
+                tint: '#EDF5F1',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#EDF5F1" />
+                        <path d="M 42 98 L 42 74 C 34 72, 24 62, 26 54 C 28 48, 36 50, 42 58 L 42 32 C 42 26, 50 26, 50 32 L 50 52 L 50 24 C 50 18, 58 18, 58 24 L 58 52 L 60 26 C 60 20, 68 20, 68 26 L 68 54 L 70 34 C 70 28, 78 28, 78 34 L 78 72 C 78 84, 70 92, 68 98 Z" fill="#F6D5BE" stroke="#3D405B" stroke-width="3" stroke-linejoin="round" />
+                        <path d="M 50 68 Q 60 74 68 66" stroke="#E07A5F" stroke-width="2.4" fill="none" stroke-linecap="round" />
+                        <path d="M 22 36 Q 18 44 22 52" stroke="#73A580" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M 86 30 Q 92 38 88 48" stroke="#73A580" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                    </svg>
+                `
+            },
+            {
+                num: '03',
+                id: 'foot',
+                simp: '\u811A',
+                trad: '\u8173',
+                pinyin: 'ji\u01CEo',
+                en: 'Foot',
+                tint: '#FEF8EC',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#FEF8EC" />
+                        <path d="M 44 24 L 68 24 L 68 62 C 78 68, 96 72, 96 84 C 96 92, 86 96, 62 96 L 44 96 C 36 96, 34 88, 36 74 L 44 24 Z" fill="#F6D5BE" stroke="#3D405B" stroke-width="3" stroke-linejoin="round" />
+                        <circle cx="94" cy="78" r="4.5" fill="#F6D5BE" stroke="#3D405B" stroke-width="2.4" />
+                        <circle cx="88" cy="72" r="3.8" fill="#F6D5BE" stroke="#3D405B" stroke-width="2.2" />
+                        <circle cx="81" cy="69" r="3.4" fill="#F6D5BE" stroke="#3D405B" stroke-width="2.2" />
+                        <path d="M 42 36 L 68 36 L 68 54 L 40 54 Z" fill="#F2CC8F" stroke="#3D405B" stroke-width="2.4" />
+                    </svg>
+                `
+            },
+            {
+                num: '04',
+                id: 'face',
+                simp: '\u8138',
+                trad: '\u81C9',
+                pinyin: 'li\u01CEn',
+                en: 'Face',
+                tint: '#FCF2EF',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#FCF2EF" />
+                        <circle cx="60" cy="60" r="38" fill="#F6D5BE" stroke="#3D405B" stroke-width="3" />
+                        <path d="M 38 48 Q 45 41 52 48" stroke="#3D405B" stroke-width="3.2" fill="none" stroke-linecap="round" />
+                        <path d="M 68 48 Q 75 41 82 48" stroke="#3D405B" stroke-width="3.2" fill="none" stroke-linecap="round" />
+                        <ellipse cx="36" cy="64" rx="8" ry="5" fill="#E07A5F" opacity="0.65" />
+                        <ellipse cx="84" cy="64" rx="8" ry="5" fill="#E07A5F" opacity="0.65" />
+                        <path d="M 58 56 Q 60 62 63 60" stroke="#3D405B" stroke-width="2.6" fill="none" stroke-linecap="round" />
+                        <path d="M 46 72 Q 60 86 74 72" stroke="#3D405B" stroke-width="3.2" fill="none" stroke-linecap="round" />
+                    </svg>
+                `
+            },
+            {
+                num: '05',
+                id: 'teeth',
+                simp: '\u7259\u9F7F',
+                trad: '\u7259\u9F52',
+                pinyin: 'y\u00E1ch\u01D0',
+                en: 'Teeth',
+                tint: '#EDF5F1',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#EDF5F1" />
+                        <path d="M 34 40 C 34 26, 52 26, 60 32 C 68 26, 86 26, 86 40 C 86 58, 80 68, 76 88 C 74 94, 66 94, 64 84 L 60 72 L 56 84 C 54 94, 46 94, 44 88 C 40 68, 34 58, 34 40 Z" fill="#FFFFFF" stroke="#3D405B" stroke-width="3" stroke-linejoin="round" />
+                        <circle cx="50" cy="48" r="3.2" fill="#3D405B" />
+                        <circle cx="70" cy="48" r="3.2" fill="#3D405B" />
+                        <path d="M 54 56 Q 60 62 66 56" stroke="#E07A5F" stroke-width="2.8" fill="none" stroke-linecap="round" />
+                        <path d="M 92 26 L 94 32 L 100 34 L 94 36 L 92 42 L 90 36 L 84 34 L 90 32 Z" fill="#F2CC8F" />
+                    </svg>
+                `
+            },
+            {
+                num: '06',
+                id: 'eyes',
+                simp: '\u773C\u775B',
+                trad: '\u773C\u775B',
+                pinyin: 'y\u01CEnj\u012Bng',
+                en: 'Eyes',
+                tint: '#FEF8EC',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#FEF8EC" />
+                        <ellipse cx="38" cy="62" rx="17" ry="20" fill="#FFFFFF" stroke="#3D405B" stroke-width="3" />
+                        <circle cx="40" cy="63" r="9.5" fill="#3D405B" />
+                        <circle cx="37" cy="59" r="3.5" fill="#FFFFFF" />
+                        <ellipse cx="82" cy="62" rx="17" ry="20" fill="#FFFFFF" stroke="#3D405B" stroke-width="3" />
+                        <circle cx="80" cy="63" r="9.5" fill="#3D405B" />
+                        <circle cx="77" cy="59" r="3.5" fill="#FFFFFF" />
+                        <path d="M 26 36 Q 38 30 50 36" stroke="#3D405B" stroke-width="3" fill="none" stroke-linecap="round" />
+                        <path d="M 70 36 Q 82 30 94 36" stroke="#3D405B" stroke-width="3" fill="none" stroke-linecap="round" />
+                    </svg>
+                `
+            },
+            {
+                num: '07',
+                id: 'ears',
+                simp: '\u8033\u6735',
+                trad: '\u8033\u6735',
+                pinyin: '\u011Brduo',
+                en: 'Ears',
+                tint: '#FCF2EF',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#FCF2EF" />
+                        <path d="M 48 26 C 74 20, 86 42, 78 68 C 72 86, 56 96, 46 88 C 38 82, 42 70, 48 66" fill="#F6D5BE" stroke="#3D405B" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M 52 38 C 66 36, 70 50, 64 64 C 60 72, 52 74, 50 68" stroke="#E07A5F" stroke-width="3" fill="none" stroke-linecap="round" />
+                        <path d="M 90 42 Q 98 54 90 66" stroke="#73A580" stroke-width="3" fill="none" stroke-linecap="round" />
+                        <path d="M 98 36 Q 108 54 98 72" stroke="#73A580" stroke-width="3" fill="none" stroke-linecap="round" />
+                    </svg>
+                `
+            },
+            {
+                num: '08',
+                id: 'mouth',
+                simp: '\u5634\u5DF4',
+                trad: '\u5634\u5DF4',
+                pinyin: 'zu\u01D0ba',
+                en: 'Mouth',
+                tint: '#EDF5F1',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#EDF5F1" />
+                        <path d="M 22 56 C 34 42, 48 44, 60 50 C 72 44, 86 42, 98 56 C 88 82, 32 82, 22 56 Z" fill="#E07A5F" stroke="#3D405B" stroke-width="3" stroke-linejoin="round" />
+                        <path d="M 30 57 Q 60 76 90 57 Q 60 64 30 57 Z" fill="#8C2F39" />
+                        <path d="M 42 70 Q 60 62 78 70 Q 60 78 42 70 Z" fill="#F29E8E" />
+                    </svg>
+                `
+            },
+            {
+                num: '09',
+                id: 'nose',
+                simp: '\u9F3B\u5B50',
+                trad: '\u9F3B\u5B50',
+                pinyin: 'b\u00EDzi',
+                en: 'Nose',
+                tint: '#FEF8EC',
+                svg: `
+                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                        <circle cx="60" cy="60" r="54" fill="#FEF8EC" />
+                        <path d="M 56 26 L 52 56 C 38 58, 34 72, 44 80 C 50 84, 56 82, 60 82 C 64 82, 70 84, 76 80 C 86 72, 82 58, 68 56 L 64 26" fill="#F6D5BE" stroke="#3D405B" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+                        <ellipse cx="48" cy="73" rx="4" ry="2.8" fill="#3D405B" />
+                        <ellipse cx="72" cy="73" rx="4" ry="2.8" fill="#3D405B" />
+                        <ellipse cx="56" cy="54" rx="3" ry="6" fill="#FFFFFF" opacity="0.6" />
+                    </svg>
+                `
+            }
+        ];
+
+        let currentScript = 'simp';
+        let currentSpeed = 0.92;
+        let isPlayingAll = false;
+        let playAllTimer = null;
+
+        // Detect restricted in-app browsers (WeChat, Instagram, TikTok, FB)
+        function checkInAppBrowser() {
+            const ua = navigator.userAgent || '';
+            if (/MicroMessenger|Instagram|BytedanceWebview|TikTok|FBAN|FBAV/i.test(ua)) {
+                document.getElementById('inapp-tip').classList.remove('hidden');
+            }
+        }
+
+        // Select the most natural Mandarin voice available on the user's phone/computer
+        function pickBestMandarinVoice(langPrefix) {
+            if (!('speechSynthesis' in window)) return null;
+            const voices = window.speechSynthesis.getVoices() || [];
+            if (!voices.length) return null;
+
+            const matching = voices.filter(v =>
+                v.lang && v.lang.toLowerCase().replace('_', '-').startsWith(langPrefix.toLowerCase())
+            );
+            if (!matching.length) return null;
+
+            const preferredNames = ['tingting', 'xiaoxiao', 'meijia', 'google \u666E\u901A\u8BDD', 'google \u570B\u8A9E', 'sin-ji', 'yaoyao', 'huihui'];
+            for (const keyword of preferredNames) {
+                const found = matching.find(v => v.name.toLowerCase().includes(keyword));
+                if (found) return found;
+            }
+            return matching[0];
+        }
+
+        // Speak a single Mandarin word and highlight its poster card
+        function speakWord(itemId, onFinished) {
+            const item = BODY_ITEMS.find(w => w.id === itemId);
+            if (!item) return;
+
+            const textToSpeak = currentScript === 'simp' ? item.simp : item.trad;
+            const langCode = currentScript === 'simp' ? 'zh-CN' : 'zh-TW';
+
+            // Highlight active card
+            document.querySelectorAll('.vocab-card').forEach(el => el.classList.remove('is-playing'));
+            const cardEl = document.getElementById(`card-${item.id}`);
+            if (cardEl) {
+                cardEl.classList.add('is-playing');
+                if (isPlayingAll) {
+                    cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }
+
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                utterance.lang = langCode;
+                utterance.rate = currentSpeed;
+                utterance.pitch = 1.06;
+
+                const bestVoice = pickBestMandarinVoice(langCode);
+                if (bestVoice) {
+                    utterance.voice = bestVoice;
+                }
+
+                utterance.onend = () => {
+                    if (cardEl) cardEl.classList.remove('is-playing');
+                    if (typeof onFinished === 'function') onFinished();
+                };
+                utterance.onerror = () => {
+                    if (cardEl) cardEl.classList.remove('is-playing');
+                    if (typeof onFinished === 'function') onFinished();
+                };
+
+                window.speechSynthesis.speak(utterance);
+            } else {
+                setTimeout(() => {
+                    if (cardEl) cardEl.classList.remove('is-playing');
+                    if (typeof onFinished === 'function') onFinished();
+                }, 900);
+            }
+        }
+
+        // Handle user tapping an individual poster card
+        function handleCardTap(itemId) {
+            stopPlayAll();
+            speakWord(itemId);
+        }
+
+        // Play all 9 words sequentially
+        function togglePlayAll() {
+            if (isPlayingAll) {
+                stopPlayAll();
+                return;
+            }
+
+            isPlayingAll = true;
+            const btn = document.getElementById('btn-play-all');
+            btn.textContent = '\u23F9 Stop';
+            btn.classList.remove('bg-[#E07A5F]', 'hover:bg-[#C86449]');
+            btn.classList.add('bg-[#3D405B]');
+
+            let index = 0;
+            function playNext() {
+                if (!isPlayingAll || index >= BODY_ITEMS.length) {
+                    stopPlayAll();
+                    return;
+                }
+                const currentItem = BODY_ITEMS[index];
+                index++;
+                speakWord(currentItem.id, () => {
+                    if (isPlayingAll) {
+                        playAllTimer = setTimeout(playNext, 550);
+                    }
+                });
+            }
+
+            playNext();
+        }
+
+        function stopPlayAll() {
+            isPlayingAll = false;
+            clearTimeout(playAllTimer);
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+            document.querySelectorAll('.vocab-card').forEach(el => el.classList.remove('is-playing'));
+            const btn = document.getElementById('btn-play-all');
+            if (btn) {
+                btn.textContent = '\u25B6\uFE0F Play All';
+                btn.classList.add('bg-[#E07A5F]', 'hover:bg-[#C86449]');
+                btn.classList.remove('bg-[#3D405B]');
+            }
+        }
+
+        // Switch Simplified / Traditional Chinese
+        function setScript(script) {
+            stopPlayAll();
+            currentScript = script;
+
+            document.getElementById('btn-simp').className = script === 'simp'
+                ? 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold bg-white text-[#E07A5F] shadow-2xs transition cursor-pointer'
+                : 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold text-[#6D718C] transition cursor-pointer';
+
+            document.getElementById('btn-trad').className = script === 'trad'
+                ? 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold bg-white text-[#E07A5F] shadow-2xs transition cursor-pointer'
+                : 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold text-[#6D718C] transition cursor-pointer';
+
+            document.getElementById('poster-title-zh').textContent = script === 'simp' ? '(\u8EAB\u4F53)' : '(\u8EAB\u9AD4)';
+            renderPosterCards();
+        }
+
+        // Switch Normal / Slow Audio Rate
+        function setSpeed(rate) {
+            currentSpeed = rate;
+            const isNormal = rate > 0.75;
+
+            document.getElementById('btn-normal').className = isNormal
+                ? 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold bg-white text-[#52826B] shadow-2xs transition cursor-pointer'
+                : 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold text-[#6D718C] transition cursor-pointer';
+
+            document.getElementById('btn-slow').className = !isNormal
+                ? 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold bg-white text-[#52826B] shadow-2xs transition cursor-pointer'
+                : 'flex-1 py-1.5 px-1.5 rounded-lg text-[11px] font-extrabold text-[#6D718C] transition cursor-pointer';
+        }
+
+        // Render all 9 Illustrated Poster Cards
+        function renderPosterCards() {
+            const container = document.getElementById('poster-cards-container');
+            container.innerHTML = BODY_ITEMS.map(item => {
+                const zhChar = currentScript === 'simp' ? item.simp : item.trad;
+                return `
+                    <button type="button" id="card-${item.id}" onclick="handleCardTap('${item.id}')"
+                        class="vocab-card w-full bg-white hover:bg-[#FCF2EF]/50 border-2 border-[#E6DFD3] rounded-2xl p-2.5 sm:p-3 flex items-center justify-between gap-3 text-left shadow-2xs cursor-pointer">
+
+                        <!-- Left: Number Pill + Custom Pastel SVG Illustration -->
+                        <div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+                            ${item.svg}
+                            <span class="absolute -top-1 -left-1 w-5 h-5 rounded-full bg-[#3D405B] text-white text-[10px] font-black flex items-center justify-center shadow-2xs">
+                                ${item.num}
+                            </span>
+                        </div>
+
+                        <!-- Middle: Chinese Character + Parent Pinyin + English -->
+                        <div class="flex-1 min-w-0">
+                            <div class="kai-font text-3xl sm:text-[34px] font-black text-[#3D405B] leading-none">
+                                ${zhChar}
+                            </div>
+                            <div class="mt-1.5 flex flex-wrap items-center gap-1.5 text-xs sm:text-[13px] font-extrabold">
+                                <span class="text-[#E07A5F]">${item.pinyin}</span>
+                                <span class="text-[#D8CFC0]">\u2022</span>
+                                <span class="text-[#6D718C]">${item.en}</span>
+                            </div>
+                        </div>
+
+                        <!-- Right: Tactile Listen Pill with Animated Soundwaves -->
+                        <div class="shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-xl font-extrabold text-xs text-[#3D405B] border border-[#E6DFD3]"
+                            style="background-color: ${item.tint};">
+                            <span>\uD83D\uDD0A</span>
+                            <div class="flex items-center gap-0.5 h-4 text-[#E07A5F]" aria-hidden="true">
+                                <span class="eq-bar"></span>
+                                <span class="eq-bar"></span>
+                                <span class="eq-bar"></span>
+                            </div>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        // Preload speech voices on mobile/desktop
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.onvoiceschanged = () => {
+                window.speechSynthesis.getVoices();
+            };
+        }
+
+        // Basic anti-copy & right-click protection
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if ((e.ctrlKey || e.metaKey) && ['c', 'u', 's'].includes(e.key.toLowerCase())) {
+                e.preventDefault();
+            }
+        });
+
+        checkInAppBrowser();
+        renderPosterCards();
+    </script>
+</body>
+</html>
