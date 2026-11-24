@@ -195,6 +195,9 @@
 
     <script>
         // 9 Core Body Parts with ASCII-Safe Unicode Escapes & Scandinavian Pastel SVG Illustrations
+        // Set to true after uploading your own recordings to audio/<id>.mp3 (e.g. audio/head.mp3)
+        const USE_RECORDINGS = true;
+        let currentAudio = null;
         const BODY_ITEMS = [
             {
                 num: '01',
@@ -424,6 +427,28 @@
                 }
             }
 
+            const finish = () => {
+                if (cardEl) cardEl.classList.remove('is-playing');
+                if (typeof onFinished === 'function') onFinished();
+            };
+
+            if (USE_RECORDINGS) {
+                if (currentAudio) currentAudio.pause();
+                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+                const audio = new Audio('audio/' + item.id + '.mp3');
+                currentAudio = audio;
+                audio.playbackRate = currentSpeed < 0.75 ? 0.75 : 1;
+                let fellBack = false;
+                const fallback = () => { if (fellBack) return; fellBack = true; speakTTS(item, textToSpeak, langCode, cardEl, onFinished); };
+                audio.onended = finish;
+                audio.onerror = fallback;
+                audio.play().catch(fallback);
+                return;
+            }
+            speakTTS(item, textToSpeak, langCode, cardEl, onFinished);
+        }
+
+        function speakTTS(item, textToSpeak, langCode, cardEl, onFinished) {
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(textToSpeak);
@@ -494,6 +519,7 @@
         function stopPlayAll() {
             isPlayingAll = false;
             clearTimeout(playAllTimer);
+            if (currentAudio) { currentAudio.pause(); currentAudio = null; }
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
             }
